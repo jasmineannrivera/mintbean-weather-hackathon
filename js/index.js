@@ -46,7 +46,7 @@ function dragPoint() {
         var weatherHTML = "";
         for(var i = 0; i <= 2; i++) {
             var forecast = data.daily[i];
-            weatherHTML += '<div class="col-3 card m-4 text-center">';
+            weatherHTML += '<div class="col-3 card shadow m-4 text-center">';
             weatherHTML += '<h1>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
                 (forecast.temp.min).toFixed(0) + '&deg;</h1>';
             weatherHTML += '<p><strong>' + forecast.weather[0].description + ' </strong>' + '</p>';
