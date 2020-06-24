@@ -1,6 +1,4 @@
 .idea/*
 *.iml
 .DS_STORE
-js/js-first-assessment.js
-js/js-second-assessment.js
 js/keys.js
