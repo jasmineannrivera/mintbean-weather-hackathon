@@ -1,8 +1,7 @@
 
 body {
-	background-color: #DDD5D0;
+	background-color: #82C0CC;
 	text-align: center;
-	font-family: 'Noto Sans JP', sans-serif;
 	color: #14091A;
 
 }
@@ -17,8 +16,14 @@ h5  {
 }
 
 .top-container {
-	background-color: #DDD5D0;
+	background-color: #82C0CC;
+}
 
+#title {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 3em;
+	padding-top: 30px;
 }
 
 .container {
@@ -44,19 +49,9 @@ h5  {
 	margin-top: 10px;
 	margin-left: 123px;
 }
-.card:first-child {
-	background-color: #BDA0BC;
 
-
-
-}
-
-.card:nth-child(2) {
-	background-color: #AC92AB;
-}
-
-.card:nth-child(3) {
-	background-color: #9B839A;
+.card {
+	background-color: mintcream;
 }
 
 a {
