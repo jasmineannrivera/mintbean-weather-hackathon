@@ -34,8 +34,8 @@ map.on("moveend", function() {
 
 function dragPoint() {
     var lngLat = marker.getLngLat();
-    var newLng = lngLat.lat;
-    var newLat = lngLat.lng;
+    var newLng = lngLat.lng;
+    var newLat = lngLat.lat;
 
 
 
