@@ -61,3 +61,5 @@ function dragPoint() {
 }
 marker.on('drag', dragPoint);
 dragPoint();
+
+//test
