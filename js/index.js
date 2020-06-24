@@ -1,7 +1,7 @@
 "use strict";
 
 
-
+var mapboxToken = "pk.eyJ1IjoiamFzbWluZWFubnJpdmVyYSIsImEiOiJjazZ0dHhheWowMndlM21tdGl3anJqYW81In0.tKJmouaLKN8yxyceD5rIUw";
 mapboxgl.accessToken = mapboxToken;
 var map = new mapboxgl.Map({
     container: 'map',
@@ -52,20 +52,21 @@ function dragPoint() {
         console.log(data.daily[0].temp.max);
 
 
-    //     var weatherHTML = "";
-    //     for(var i = 0; i <= 2; i++) {
-    //         weatherHTML += '<div class="col-3 card m-4 text-center">';
-    //         weatherHTML += '<h1>' + (data.daily.data[i].temp.max).toFixed(0) + '&deg;|' +
-    //             (data.daily.data[i].temperatureLow).toFixed(0) + '&deg;</h1>';
-    //         weatherHTML += '<p><strong>' + data.daily.data[i].summary + ' </strong>' + '</p>';
-    //         weatherHTML += '<p><strong>Humidity: </strong>' +
-    //             (data.daily.data[i].humidity * 100).toFixed(0) + "%" + '</p>';
-    //         weatherHTML += '<p><strong>Dew Point: </strong>' + (data.daily.data[i].dewPoint).toFixed(0) + '&deg;</p>';
-    //         weatherHTML += '<p><strong>Chance of Rain: </strong>' + (((data.daily.data[i].precipProbability) * 100).toFixed(0)) + '%</p>';
-    //         weatherHTML += '</div>';
-    //     }
-    //
-    //     $("#insertData").html(weatherHTML);
+        var weatherHTML = "";
+        for(var i = 0; i <= 2; i++) {
+            var forecast = data.daily[i];
+            weatherHTML += '<div class="col-3 card m-4 text-center">';
+            weatherHTML += '<h1>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
+                (forecast.temp.min).toFixed(0) + '&deg;</h1>';
+            weatherHTML += '<p><strong>' + forecast.weather[0].description + ' </strong>' + '</p>';
+            // weatherHTML += '<p><strong>Humidity: </strong>' +
+            //     (data.daily.data[i].humidity * 100).toFixed(0) + "%" + '</p>';
+            // weatherHTML += '<p><strong>Dew Point: </strong>' + (data.daily.data[i].dewPoint).toFixed(0) + '&deg;</p>';
+            // weatherHTML += '<p><strong>Chance of Rain: </strong>' + (((data.daily.data[i].precipProbability) * 100).toFixed(0)) + '%</p>';
+            weatherHTML += '</div>';
+        }
+
+        $("#insertData").html(weatherHTML);
     });
 }
 marker.on('drag', dragPoint);
