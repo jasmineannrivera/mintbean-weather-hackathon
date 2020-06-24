@@ -1,0 +1,70 @@
+
+body {
+	background-color: #DDD5D0;
+	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #14091A;
+
+}
+
+#insertData {
+	display: flex;
+	justify-content: center;
+}
+
+h5  {
+	padding-bottom: 20px;
+}
+
+.top-container {
+	background-color: #DDD5D0;
+
+}
+
+.container {
+	padding-top: 22px;
+}
+
+#map {
+	padding-top: 20px;
+	width: 59%;
+	height: 700px;
+	margin:0 auto;
+}
+
+.lng-lat-input{
+	padding-top: 10px;
+}
+
+.lng-input {
+	margin-top: 10px;
+}
+
+.submit {
+	margin-top: 10px;
+	margin-left: 123px;
+}
+.card:first-child {
+	background-color: #BDA0BC;
+
+
+
+}
+
+.card:nth-child(2) {
+	background-color: #AC92AB;
+}
+
+.card:nth-child(3) {
+	background-color: #9B839A;
+}
+
+a {
+	color: #14091A;
+	font-size: 18px;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
