@@ -3,6 +3,8 @@ body {
 	background-color: #82C0CC;
 	text-align: center;
 	color: #14091A;
+	font-family: 'Quicksand', sans-serif;
+
 
 }
 
@@ -11,9 +13,6 @@ body {
 	justify-content: center;
 }
 
-h5  {
-	padding-bottom: 20px;
-}
 
 .top-container {
 	background-color: #82C0CC;
@@ -35,9 +34,9 @@ h1 {
 }
 
 #map {
-	padding-top: 20px;
+	padding-top: 10px;
 	width: 59%;
-	height: 700px;
+	height: 500px;
 	margin:0 auto;
 }
 
@@ -56,6 +55,7 @@ h1 {
 
 .card {
 	background-color: mintcream;
+	border: #F4A55D 1px solid;
 }
 
 a {

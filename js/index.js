@@ -22,7 +22,7 @@ map.addControl(new MapboxGeocoder({
 
 var marker = new mapboxgl.Marker({
     draggable: true,
-    color: "yellow"
+    color: "orange"
 })
     .setLngLat([long, lat])
     .addTo(map);
