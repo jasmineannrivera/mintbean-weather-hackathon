@@ -46,14 +46,14 @@ var dayArray = ["Today", "Tomorrow", "Next Day"];
         var weatherHTML = "";
         for(var i = 0; i <= 2; i++) {
             var forecast = data.daily[i];
-            weatherHTML += '<div class="col-3 card shadow m-4 text-center">';
+            weatherHTML += '<div class="col-md-3 col-sm-12 card shadow m-4 text-center">';
             weatherHTML += '<h1>' + dayArray[i] + '</h1>';
-            weatherHTML += '<h1>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
-                (forecast.temp.min).toFixed(0) + '&deg;</h1>';
+            weatherHTML += '<h2>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
+                (forecast.temp.min).toFixed(0) + '&deg;F</h2>';
             weatherHTML += '<p><strong>' + forecast.weather[0].description + ' </strong>' + '</p>';
             weatherHTML += '<p><strong> UV Index: ' + (forecast.uvi).toFixed(0) + ' </strong>' + '</p>';
             weatherHTML += '<p><strong>Humidity: </strong>' +(forecast.humidity).toFixed(0) + "%" + '</p>';
-            weatherHTML += '<p><strong>Dew Point: </strong>' + (forecast.dew_point).toFixed(0) + '&deg;</p>';
+            weatherHTML += '<p><strong>Dew Point: </strong>' + (forecast.dew_point).toFixed(0) + '&deg;F</p>';
             weatherHTML += '</div>';
         }
 

@@ -25,45 +25,21 @@ h1 {
 #title {
 	font-family: 'Quicksand', sans-serif;
 	color: white;
-	font-size: 3em;
-	padding-top: 1%;
+	font-size: 3rem;
+	margin-top: 1rem;
 }
 
-.container {
-	padding-top: 15px;
-}
+
 
 #map {
-	padding-top: 10px;
-	width: 59%;
-	height: 500px;
+	width: 60rem;
+	height: 30rem;
 	margin:0 auto;
 }
 
-.lng-lat-input{
-	padding-top: 10px;
-}
-
-.lng-input {
-	margin-top: 10px;
-}
-
-.submit {
-	margin-top: 10px;
-	margin-left: 123px;
-}
 
 .card {
 	background-color: mintcream;
 	border: #F4A55D 2px solid;
 }
 
-a {
-	color: #14091A;
-	font-size: 18px;
-}
-
-a:hover {
-	color: white;
-	text-decoration: none;
-}
