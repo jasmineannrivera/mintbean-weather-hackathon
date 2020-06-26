@@ -38,7 +38,7 @@ function dragPoint() {
     var newLat = lngLat.lat;
 
 
-var dayArray = ["Today", "Tomorrow", "Third Day"];
+var dayArray = ["Today", "Tomorrow", "Next Day"];
     let openWeatherToken = "f3846b0c841256675a19a50e484ca5ff";
 
         $.get("https://api.openweathermap.org/data/2.5/onecall?lat=" + newLat + "&lon=" + newLng + "&exclude=hourly&appid=f3846b0c841256675a19a50e484ca5ff&units=imperial").done(function(data) {
