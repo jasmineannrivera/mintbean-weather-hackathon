@@ -38,7 +38,7 @@ function dragPoint() {
     var newLat = lngLat.lat;
 
 
-
+var dayArray = ["Today", "Tomorrow", "Third Day"];
     let openWeatherToken = "f3846b0c841256675a19a50e484ca5ff";
 
         $.get("https://api.openweathermap.org/data/2.5/onecall?lat=" + newLat + "&lon=" + newLng + "&exclude=hourly&appid=f3846b0c841256675a19a50e484ca5ff&units=imperial").done(function(data) {
@@ -47,6 +47,7 @@ function dragPoint() {
         for(var i = 0; i <= 2; i++) {
             var forecast = data.daily[i];
             weatherHTML += '<div class="col-3 card shadow m-4 text-center">';
+            weatherHTML += '<h1>' + dayArray[i] + '</h1>';
             weatherHTML += '<h1>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
                 (forecast.temp.min).toFixed(0) + '&deg;</h1>';
             weatherHTML += '<p><strong>' + forecast.weather[0].description + ' </strong>' + '</p>';
