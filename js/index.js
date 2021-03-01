@@ -62,3 +62,11 @@ var dayArray = ["Today", "Tomorrow", "Next Day"];
 }
 marker.on('drag', dragPoint);
 dragPoint();
+//     weatherHTML += '<h2>' + (forecast.temp.max).toFixed(0) + '&deg;|' +
+//         (forecast.temp.min).toFixed(0) + '&deg;F</h2>';
+function createWeatherHTML(weather) {
+    var forecast = data.daily[i];
+    
+}
+
+createWeatherHTML();
